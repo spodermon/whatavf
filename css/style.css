@@ -34,7 +34,7 @@ body{
 }
 
 main, footer{
-    width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     color: white;
     background-color:rgba(192,192,192,0.3);
@@ -67,10 +67,10 @@ header{
     height: 50px;
     background: white;
     display: block;
-    padding-left: 2%;
+    padding-left: 5%;
     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     border-bottom: 3px #00cc99 solid;
     margin-bottom: 2%;
 }
@@ -85,7 +85,7 @@ nav{
     height: 50px;
     position: absolute;
     top: 0px;
-    right: 100px;
+    right: 5%;
     padding-left: 50px;
     
 }
@@ -97,7 +97,7 @@ nav ul{
 }
 
 nav ul li{
-    float: right;
+    float: left;
     list-style: none;
     height: 50px;
 }
@@ -192,3 +192,62 @@ footer {
 #menu ul li{
     background-color: rgba(0,204,153,1.0);
 }
+<<<<<<< HEAD
+=======
+
+#show-menu-checkbox{
+    /*background: url(../bilder/menu-lines.png) no-repeat;*/
+    display: none;
+    float: right;
+    /*width: 35px;
+    height: 35px;
+    border: none;
+    margin-top: 6px;
+    margin-right: 15px;*/
+}
+
+@media (max-width: 850px) {
+
+    main, footer {
+        width: 90%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    header{
+        padding-left: 2%;
+    }
+
+    nav{
+        right: 2%;
+    }
+
+    ul li{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 700px) {
+    nav ul{
+        display: none;
+    }
+
+    #show-menu-checkbox{
+        display: block;
+    }
+
+    #show-menu-label{
+        margin-top: 6px;
+        margin-right: 15px;
+    }
+
+    input[type=checkbox]:checked{
+        /*background-color: #FF0000;*/
+    }
+}
+
+}
+>>>>>>> origin/master
